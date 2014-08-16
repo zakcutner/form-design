@@ -4,8 +4,13 @@
 body {
 	font-family: Lato;
 	font-weight: 300;
+<<<<<<< HEAD
 	background-color: #34495e;
 	color: #777777;
+=======
+	background-color: $primaryDark;
+	color: $textMain;
+>>>>>>> origin/master
 }
 
 .container {
@@ -38,6 +43,7 @@ body {
 			color: #999999;
 		}
 
+<<<<<<< HEAD
 		margin-bottom: 20px;
 	}
 
@@ -58,6 +64,21 @@ body {
 	input:focus, a:hover, a:focus {
 		border-color: #aaaaaa;
 	}
+=======
+input {
+	font-family: Lato;
+	font-weight: 300;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: block;
+	width: 400px;
+	@include border-radius(4px);
+	@include transition(all, 0.8s, ease-out);
+	outline: 0;
+	border: 1px solid #dddddd;
+}
+>>>>>>> origin/master
 
 	a {
 		display: block;
