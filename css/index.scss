@@ -22,7 +22,7 @@ body {
 
 .form {
 	display: inline-block;
-	background-color: #ffffff;
+	background-color: #ecf0f1;
 	padding: 30px 40px;
 	text-align: left;
 	@include border-radius(4px);
@@ -69,5 +69,6 @@ body {
 		border: 1px solid #dddddd;
 		@include border-radius(4px);
 		outline: 0;
+		background-color: #ffffff
 	}
 }
