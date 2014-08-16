@@ -4,9 +4,11 @@
 /*
 	Text Styling:
 */
-body { font-family: Lato; font-weight: 300; background-color: #16a085; text-align: center; color: #666666; }
+body { font-family: Lato; font-weight: 300; background-color: #16a085; color: #666666; }
 
-.container { display: inline-block; background-color: #ffffff; padding: 40px; border: 1px solid #eeeeee; text-align: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
+.container { display: table; }
+
+.content { display: table-cell; vertical-align: middle; background-color: #ffffff; padding: 40px; border: 1px solid #eeeeee; text-align: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 
 .header { font-size: 18px; margin-bottom: 20px; }
 

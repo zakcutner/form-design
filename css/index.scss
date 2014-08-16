@@ -5,12 +5,16 @@ body {
 	font-family: Lato;
 	font-weight: 300;
 	background-color: #16a085;
-	text-align: center;
 	color: #666666;
 }
 
 .container {
-	display: inline-block;
+	display: table;
+}
+
+.content {
+	display: table-cell;
+	vertical-align: middle;
 	background-color: #ffffff;
 	padding: 40px;
 	border: 1px solid #eeeeee;
