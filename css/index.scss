@@ -4,8 +4,8 @@
 body {
 	font-family: Lato;
 	font-weight: 300;
-	background-color: #16a085;
-	color: #666666;
+	background-color: $primaryDark;
+	color: $textMain;
 }
 
 .container {
@@ -43,6 +43,7 @@ input {
 	display: block;
 	width: 400px;
 	@include border-radius(4px);
+	@include transition(all, 0.8s, ease-out);
 	outline: 0;
 	border: 1px solid #dddddd;
 }
