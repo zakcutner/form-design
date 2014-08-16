@@ -1,6 +1,6 @@
 body { font-family: Lato; font-weight: 300; background-color: #eeeeee; text-align: center; }
 
-.container { display: inline-block; background-color: #ffffff; padding: 40px; border: 1px solid #eeeeee; text-align: left; }
+.container { display: inline-block; background-color: #ffffff; padding: 40px; border: 1px solid #eeeeee; text-align: left; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px; }
 
 .header { font-size: 20px; margin-bottom: 20px; }
 
