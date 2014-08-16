@@ -4,7 +4,11 @@
 	-ms-border-radius: $radius;
 	border-radius: $radius;
 }
-
+@mixin remove-box-shadow{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
 @mixin transition($transition-property, $transition-time, $method) {
 	-webkit-transition: $transition-property $transition-time $method;
 	-moz-transition: $transition-property $transition-time $method;
