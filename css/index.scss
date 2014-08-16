@@ -1,10 +1,21 @@
 body {
 	font-family: Lato;
 	font-weight: 300;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.container {
+	display: inline-block;
+	background-color: #ffffff;
+	padding: 40px;
+	border: 1px solid #eeeeee;
+	text-align: left;
 }
 
 .header {
-	
+	font-size: 20px;
+	margin-bottom: 20px;
 }
 
 .form {
@@ -14,5 +25,9 @@ body {
 input {
 	font-family: Lato;
 	font-weight: 300;
-	padding: 10px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: block;
+	width: 400px;
 }
