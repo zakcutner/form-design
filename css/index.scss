@@ -4,8 +4,9 @@
 body {
 	font-family: Lato;
 	font-weight: 300;
-	background-color: #eeeeee;
+	background-color: #16a085;
 	text-align: center;
+	color: #666666;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 }
 
 .header {
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 20px;
 }
 
@@ -35,4 +36,10 @@ input {
 	display: block;
 	width: 400px;
 	@include border-radius(4px);
+	outline: 0;
+	border: 1px solid #dddddd;
+}
+
+input:focus {
+	border-color: #aaaaaa;
 }
