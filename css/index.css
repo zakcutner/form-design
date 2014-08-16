@@ -4,16 +4,11 @@
 /*
 	Text Styling:
 */
-<<<<<<< HEAD
 body { font-family: Lato; font-weight: 300; background-color: #34495e; color: #777777; }
-=======
-body { font-family: Lato; font-weight: 300; background-color: #16a085; color: #2c3e50; }
->>>>>>> origin/master
 
 .container { display: table; height: 100%; width: 100%; text-align: center; }
 .container .content { display: table-cell; vertical-align: middle; }
 
-<<<<<<< HEAD
 .form { display: inline-block; background-color: #ffffff; padding: 30px 40px; text-align: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 .form .header { margin-bottom: 20px; }
 .form .header h1 { font-weight: 700; font-size: 18px; }
@@ -21,12 +16,3 @@ body { font-family: Lato; font-weight: 300; background-color: #16a085; color: #2
 .form input { font-family: Lato; font-weight: 300; font-size: 13px; color: #666666; padding: 15px; margin-bottom: 15px; display: block; width: 400px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; outline: 0; border: 1px solid #dddddd; }
 .form input:focus, .form a:hover, .form a:focus { border-color: #aaaaaa; }
 .form a { display: block; padding: 15px; font-size: 13px; text-align: center; text-decoration: none; color: #777777; border: 1px solid #dddddd; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; outline: 0; }
-=======
-.content { display: table-cell; vertical-align: middle; background-color: #ffffff; padding: 40px; border: 1px solid #eeeeee; text-align: left; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-
-.header { font-size: 18px; margin-bottom: 20px; }
-
-input { font-family: Lato; font-weight: 300; padding: 15px; margin-top: 15px; margin-bottom: 15px; display: block; width: 400px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; -webkit-transition: all 0.8s ease-out; -moz-transition: all 0.8s ease-out; -ms-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; transition: all 0.8s ease-out; outline: 0; border: 1px solid #dddddd; }
-
-input:focus { border-color: #aaaaaa; }
->>>>>>> origin/master
