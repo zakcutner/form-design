@@ -5,11 +5,6 @@
           border-radius: $radius;
 }
 
-@mixin box-shadow(isinset, colour){
-	-webkit-box-shadow: isinset 0px 5px 5px 0px colour;
-	-moz-box-shadow:    isinset 0px 5px 5px 0px colour;
-	box-shadow:         isinset 0px 5px 5px 0px colour;
-}
 
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
