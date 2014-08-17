@@ -16,3 +16,45 @@
 	-o-transition: $transition-property $transition-time $method;
 	transition: $transition-property $transition-time $method;
 }
+@mixin arrow($direction,$size,$colour)
+{
+	width: 0;
+	height: 0;
+	@if unitless($size){
+		@warn "Assuming #{$size} to be in pixels";
+		$size: 1px * $size;
+	}
+	@if $direction == "up" {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $colour;	
+	}
+	@if $direction == "down" {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;	
+		border-top: $size solid $colour;	
+	}
+	@if $direction == "right" {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $colour;
+	}
+	@if  $direction == "left" {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $colour;
+	}
+}
+@mixin align($side)
+{
+	@if $side == "left" {
+		margin-right: auto;
+	}
+	@if $side == "center" {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@if $side == "right" {
+		margin-left: auto;
+	}
+}
