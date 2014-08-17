@@ -4,6 +4,9 @@
 /*
 	Text Styling:
 */
+/*
+	Backgrounds:
+*/
 body { font-family: Lato; font-weight: 300; background-color: #2c3e50; color: #777777; }
 
 .container { display: table; height: 100%; width: 100%; text-align: center; }
@@ -14,5 +17,6 @@ body { font-family: Lato; font-weight: 300; background-color: #2c3e50; color: #7
 .form .header h1 { font-weight: 700; font-size: 18px; }
 .form .header p { font-size: 14px; color: #999999; }
 .form input { font-family: Lato; font-weight: 300; font-size: 13px; color: #666666; padding: 15px; margin-bottom: 15px; display: block; width: 400px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; outline: 0; border: 1px solid #dddddd; }
-.form input:focus, .form a:hover, .form a:focus { border-color: #aaaaaa; }
+.form input:focus, .form a:hover, .form a:focus { border-color: #aaaaaa; -webkit-transition: all 0.4s ease-in; -moz-transition: all 0.4s ease-in; -ms-transition: all 0.4s ease-in; -o-transition: all 0.4s ease-in; transition: all 0.4s ease-in; }
 .form a { display: block; padding: 15px; font-size: 13px; text-align: center; text-decoration: none; color: #777777; border: 1px solid #dddddd; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; outline: 0; background-color: white; }
+.form a, .form input { -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
