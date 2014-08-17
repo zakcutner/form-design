@@ -5,7 +5,8 @@ body {
 	font-family: Lato;
 	font-weight: 300;
 	margin: 0;
-	background-color: $backgroundMain;
+	//background-color: $backgroundMain;
+	background-color: #F2F1EF;
 	color: $textMain;
 }
 
@@ -23,10 +24,11 @@ body {
 
 .form {
 	display: inline-block;
-	background-color: $backgroundContent;
+	//background-color: $backgroundContent;
+	background-color: #ffffff;
 	padding: 30px 40px;
 	text-align: left;
-	@include border-radius(4px);
+	//@include border-radius(4px);
 
 	.header {
 		margin-bottom: 20px;
@@ -44,7 +46,7 @@ body {
 
 	a, input {
 		@include transition(border-color, 100ms, linear);
-		@include border-radius(4px);
+		//@include border-radius(4px);
 		border: 1px solid $inactiveExtraLight;
 		outline: 0;
 		background-color: white;
@@ -54,7 +56,7 @@ body {
 		padding: 15px;
 	}
 
-	input {	
+	input {
 		color: $textUser;
 		margin-bottom: 15px;
 		display: block;
@@ -65,10 +67,21 @@ body {
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		color: $inactiveDark;
+		//color: $inactiveDark;
+		background-color: #67809F; //temp
+		border: 0; //temp
+		color: #ffffff; //temp
+
+		&:hover, &:focus {
+			background-color: #5C97BF;
+		}
+
+		i.fa {
+			font-size: 20px;
+		}
 	}
 
-	input:focus, a:hover, a:focus {
+	input:focus {
 		border-color: $inactiveLight;
 	}
 }
