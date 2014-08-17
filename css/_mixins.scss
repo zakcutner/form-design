@@ -32,6 +32,9 @@
 */
 
 @mixin transition($transition-property, $transition-time, $method) {
+	@if unitless($transition-time){
+		$transition-time : $transiton-time * 1s;
+	}
 	-webkit-transition: $transition-property $transition-time $method;
 	-moz-transition: $transition-property $transition-time $method;
 	-ms-transition: $transition-property $transition-time $method;
@@ -114,4 +117,24 @@
 	-o-transform: rotate($deg);
 	-webkit-transform: rotate($deg);
 	transform: rotate($deg);
+}
+
+/*
+	Box Shadow, creates a box shadow
+	@param $top : Top shadow
+	@param $left : Left shadow
+	@param $blur : The blur
+	@param $color : Shadow colour
+	@param $inset : Default false, determins if the shadow is inset or not.
+*/
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
 }
