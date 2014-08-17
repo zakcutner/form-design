@@ -5,8 +5,7 @@ body {
 	font-family: Lato;
 	font-weight: 300;
 	margin: 0;
-	//background-color: $backgroundMain;
-	background-color: #F2F1EF;
+	background-color: $backgroundMain;
 	color: $textMain;
 }
 
@@ -25,7 +24,7 @@ body {
 .form {
 	display: inline-block;
 	//background-color: $backgroundContent;
-	background-color: #ffffff;
+	background-color: $white;
 	padding: 30px 40px;
 	text-align: left;
 	//@include border-radius(4px);
@@ -68,12 +67,14 @@ body {
 		text-align: center;
 		text-decoration: none;
 		//color: $inactiveDark;
-		background-color: #67809F; //temp
+		background-color: $btnDft; //temp
 		border: 0; //temp
-		color: #ffffff; //temp
-
+		color: white; //temp
+		@include transition(background-color, 150ms, linear);	
+		
 		&:hover, &:focus {
-			background-color: #5C97BF;
+			background-color: $btnHov;
+			
 		}
 
 		i.fa {
