@@ -27,7 +27,6 @@ body {
 	background-color: $white;
 	padding: 30px 40px;
 	text-align: left;
-	//@include border-radius(4px);
 
 	.header {
 		margin-bottom: 20px;
@@ -45,8 +44,6 @@ body {
 
 	a, input {
 		@include transition(border-color, 100ms, linear);
-		//@include border-radius(4px);
-		border: 1px solid $inactiveExtraLight;
 		outline: 0;
 		background-color: white;
 		font-family: Lato;
@@ -57,9 +54,36 @@ body {
 
 	input {
 		color: $textUser;
-		margin-bottom: 15px;
 		display: block;
 		width: 400px;
+		border: 0;
+	}
+
+	.field {
+		margin-bottom: 15px;
+		//border: 1px solid $inactiveExtraLight;
+		@include transition(border-color, 150ms, linear);
+
+		* {
+			display: inline-block;
+		}
+
+		.icon {
+			padding: 17px 0;
+			width: 50px;
+			text-align: center;
+			color: $white;
+			background-color: $inactiveExtraLight;
+			@include transition(background-color, 150ms, linear);
+		}
+
+		&.focus {
+			border-color: $inactiveLight;
+
+			.icon {
+				background-color: $inactiveLight;
+			}
+		}
 	}
 
 	a {
@@ -70,11 +94,10 @@ body {
 		background-color: $btnDft; //temp
 		border: 0; //temp
 		color: white; //temp
-		@include transition(background-color, 150ms, linear);	
+		@include transition(background-color, 150ms, linear);
 		
 		&:hover, &:focus {
 			background-color: $btnHov;
-			
 		}
 
 		i.fa {
