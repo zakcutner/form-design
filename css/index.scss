@@ -23,7 +23,6 @@ body {
 
 .form {
 	display: inline-block;
-	//background-color: $backgroundContent;
 	background-color: $white;
 	padding: 30px 40px;
 	text-align: left;
@@ -90,10 +89,9 @@ body {
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		//color: $inactiveDark;
-		background-color: $btnDft; //temp
-		border: 0; //temp
-		color: white; //temp
+		background-color: $btnDft;
+		border: 0;
+		color: white;
 		@include transition(background-color, 150ms, linear);
 		
 		&:hover, &:focus {
@@ -109,4 +107,3 @@ body {
 		border-color: $inactiveLight;
 	}
 }
-
