@@ -1,14 +1,31 @@
+/*
+	Border Radius apply a border radius effect.
+	@param $radius : The radius of the border (Assumes pixels). 
+*/
 @mixin border-radius($radius) {
+	@if unitless($radius){
+		@warn "Assuming #{$size} to be in pixels";
+		$size: 1px * $size;
+	}
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 	-ms-border-radius: $radius;
 	border-radius: $radius;
 }
+/*
+	Remove Box Shadow, removes any box shadow effect 
+*/
 @mixin remove-box-shadow{
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
+/*
+	Transition, adds a transition
+	@param $transition-property : The property you want to have the effect on.
+	@param $transition-time : The time the transition will last. 
+	@param $method : The method of transition, e.g linear.
+*/
 @mixin transition($transition-property, $transition-time, $method) {
 	-webkit-transition: $transition-property $transition-time $method;
 	-moz-transition: $transition-property $transition-time $method;
@@ -16,8 +33,13 @@
 	-o-transition: $transition-property $transition-time $method;
 	transition: $transition-property $transition-time $method;
 }
-@mixin arrow($direction,$size,$colour)
-{
+/*
+	Arrow, creates an arrow.
+	@param $direction : The direction you want the arrow to face. Valid inputs are: "up","dow","right","left". See rotate also for more directions
+	@param $size : The *rough* size of the arrow, experimenting will be needed. Also if no unit is specified them assume pixels
+	@param $colour : The colour of the arrow.
+*/
+@mixin arrow($direction,$size,$colour) {
 	width: 0;
 	height: 0;
 	@if unitless($size){
@@ -45,16 +67,40 @@
 		border-left: $size solid $colour;
 	}
 }
-@mixin align($side)
-{
+/*
+	Align the element.
+	@param $side : The side that you want to align to. Valid inputs are: "left","center","right".
+*/
+@mixin align($side) {
+	$valid : false;
 	@if $side == "left" {
 		margin-right: auto;
+		$valid : true;
 	}
 	@if $side == "center" {
 		margin-left: auto;
 		margin-right: auto;
+		$valid : true;
 	}
 	@if $side == "right" {
 		margin-left: auto;
+		$valid : true;
 	}
+	@if $valid == false
+	{
+		@warn $side + " is not a valid argument for $side! See Explanation.";
+	}
+}
+/*
+	Rotate the element
+	@param $deg : The amount of degrees (Unit optional, Automatically adds deg)
+*/
+@mixin rotate($deg) {
+	@if unitless($deg) {
+		$deg : 1deg * $deg;
+	}
+	-moz-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	transform: rotate($deg)
 }

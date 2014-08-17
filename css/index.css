@@ -1,5 +1,28 @@
 /*
-	Rotate
+	Border Radius apply a border radius effect.
+	@param $radius : The radius of the border (Assumes pixels). 
+*/
+/*
+	Remove Box Shadow, removes any box shadow effect 
+*/
+/*
+	Transition, adds a transition
+	@param $transition-property : The property you want to have the effect on.
+	@param $transition-time : The time the transition will last. 
+	@param $method : The method of transition, e.g linear.
+*/
+/*
+	Arrow, creates an arrow.
+	@param $direction : The direction you want the arrow to face. Valid inputs are: "up","dow","right","left". See rotate also for more directions
+	@param $size : The *rough* size of the arrow, experimenting will be needed. Also if no unit is specified them assume pixels
+	@param $colour : The colour of the arrow.
+*/
+/*
+	Align the element.
+	@param $side : The side that you want to align to. Valid inputs are: "left","center","right".
+*/
+/*
+	Rotate the element
 	@param $deg : The amount of degrees (Unit optional, Automatically adds deg)
 */
 /*
