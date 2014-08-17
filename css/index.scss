@@ -41,12 +41,6 @@ body {
 		margin-bottom: 20px;
 	}
 
-	input::before
-	{
-		content: "";
-		@include arrow("down",10px,grey);
-		@include align("center");
-	}
 	input {
 		font-family: Lato;
 		font-weight: 300;
