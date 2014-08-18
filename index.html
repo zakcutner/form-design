@@ -39,6 +39,10 @@
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<script src='js/backgrounds.js'></script>
 	<script type='text/javascript'>
+		$(document).ready(function() {
+			$('body').css('background-image', randomPic());
+		});
+
 		$('input').focus(function() {
 			$(this).parent().addClass('focus');
 		}).blur(function() {

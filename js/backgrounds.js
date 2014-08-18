@@ -1,7 +1,5 @@
-var randomClass = function() {
-	var classes = ['1','2','3'];
-	var class = Math.floor(Math.random() * classes.length));
-	return 'pic-' + class;
+var randomPic = function() {
+	var picNames = ['1','2','3'];
+	var picName = Math.floor((Math.random() * picNames.length) + 1);
+	return 'url(img/pic-' + picName + '.JPG)';
 };
-
-$('body').addClass(randomClass());
