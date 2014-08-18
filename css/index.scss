@@ -79,6 +79,10 @@ body {
 			.icon, input {
 				color: $inactiveDark;
 			}
+
+			&.warning {
+				border-right: 4px solid $warningDark;
+			}
 		}
 
 		&.warning {
