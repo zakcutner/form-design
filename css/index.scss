@@ -1,6 +1,6 @@
 @import '_mixins';
 @import '_colour-theme';
-
+@import '_backgrounds.scss';
 @include placeholder($inactiveLight);
 
 body {
