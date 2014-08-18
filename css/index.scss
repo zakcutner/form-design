@@ -56,7 +56,7 @@ body {
 		color: $inactiveLight;
 		border: 0;
 		background-color: transparent;
-		@include transition(color, 100ms, linear);
+		@include transition(all, 100ms, linear);
 		width: calc(100% - 31px);
 	}
 
@@ -76,7 +76,6 @@ body {
 		}
 
 		&.focus {
-			@include placeholder($inactiveLight);
 
 			.icon, input {
 				color: $inactiveDark;
