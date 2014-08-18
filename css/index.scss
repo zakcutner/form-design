@@ -1,6 +1,6 @@
 @import '_mixins';
 @import '_colour-theme';
-
+@import '_backgrounds.scss';
 @include placeholder($inactiveLight);
 
 body {
@@ -62,7 +62,7 @@ body {
 
 	.field {
 		margin-bottom: 15px;
-		background-color: #eeeeee;
+		background-color: $inactiveExtraLight;
 		@include transition(border-color, 100ms, linear);
 
 		* {
@@ -82,7 +82,11 @@ body {
 		}
 
 		&.warning {
+<<<<<<< HEAD
 			border-right: 4px solid #F5D76E;
+=======
+			border-right: 5px solid $warningLight;
+>>>>>>> origin/master
 		}
 	}
 
