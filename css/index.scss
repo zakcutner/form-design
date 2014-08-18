@@ -62,7 +62,6 @@ body {
 	.field {
 		margin-bottom: 15px;
 		background-color: #eeeeee;
-		border-right: 3px solid $btnDft;
 		@include transition(border-color, 100ms, linear);
 
 		* {
@@ -76,12 +75,13 @@ body {
 		}
 
 		&.focus {
-			border-color: $inactiveLight;
-
 			.icon, input {
-				//background-color: $inactiveLight;
 				color: $inactiveDark;
 			}
+		}
+
+		&.warning {
+			border-right: 3px solid $btnDft;
 		}
 	}
 
