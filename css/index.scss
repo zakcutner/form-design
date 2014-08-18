@@ -82,11 +82,7 @@ body {
 		}
 
 		&.warning {
-<<<<<<< HEAD
-			border-right: 4px solid #F5D76E;
-=======
-			border-right: 5px solid $warningLight;
->>>>>>> origin/master
+			border-right: 4px solid $warningLight;
 		}
 	}
 
