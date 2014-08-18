@@ -63,7 +63,8 @@ body {
 	.field {
 		margin-bottom: 15px;
 		background-color: $inactiveExtraLight;
-		@include transition(border-color, 100ms, linear);
+		border-right: 4px solid transparent;
+		@include transition(border, 100ms, linear);
 
 		* {
 			display: inline-block;
@@ -76,8 +77,6 @@ body {
 		}
 
 		&.focus {
-			@include placeholder($inactiveLight);
-
 			.icon, input {
 				color: $inactiveDark;
 			}

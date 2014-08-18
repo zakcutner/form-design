@@ -50,6 +50,22 @@
 			$(this).parent().addClass('focus');
 		}).blur(function() {
 			$(this).parent().removeClass('focus');
+
+			if($(this).val() == '') {
+				$(this).parent().addClass('warning');
+			}
+
+			else {
+				$(this).parent().removeClass('warning');
+			}
+		});
+
+		$('form').submit(function() {
+			alert('hi');
+		});
+
+		$('a').click(function() {
+			$('form').submit();
 		});
 	</script>
 </body>
