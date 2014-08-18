@@ -61,8 +61,8 @@ body {
 
 	.field {
 		margin-bottom: 15px;
-		//border: 1px solid $inactiveExtraLight;
 		background-color: #eeeeee;
+		border-right: 3px solid $btnDft;
 		@include transition(border-color, 100ms, linear);
 
 		* {
@@ -71,12 +71,7 @@ body {
 
 		.icon {
 			padding-left: 15px;
-			//padding: 18px 0;
-			//width: 50px;
-			//text-align: center;
 			color: $inactiveLight;
-			//color: $white;
-			//background-color: $inactiveExtraLight;
 			@include transition(color, 100ms, linear);
 		}
 
