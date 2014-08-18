@@ -1,6 +1,6 @@
 @import '_mixins';
 @import '_colour-theme';
-@include placeholder($inactiveLight);
+@include placeholder($textUser);
 
 body {
 	font-family: Lato;
