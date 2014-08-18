@@ -1,6 +1,6 @@
 @import '_mixins';
 @import '_colour-theme';
-@include placeholder($textUser);
+@include placeholder($inactiveLight, $warningLight);
 
 body {
 	font-family: Lato;
@@ -76,6 +76,8 @@ body {
 		}
 
 		&.focus {
+			@include placeholder($inactiveLight);
+
 			.icon, input {
 				color: $inactiveDark;
 			}

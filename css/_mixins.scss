@@ -158,19 +158,33 @@
 }
 
 
-@mixin placeholder($color) {
+@mixin placeholder($dftColor, $focusColor) {
 	input::-webkit-input-placeholder {
-    	color:    $color;
+    	color:    $dftColor;
 	}
 	input:-moz-placeholder {
-	    color:    $color;
+	    color:    $dftColor;
 	    opacity:  1;
 	}
 	input::-moz-placeholder {
-	    color:    $color;
+	    color:    $dftColor;
 	    opacity:  1;
 	}
 	input:-ms-input-placeholder {
-	    color:    $color;
+	    color:    $dftColor;
+	}
+	input:focus::-webkit-input-placeholder {
+    	color:    $focusColor;
+	}
+	input:focus:-moz-placeholder {
+	    color:    $focusColor;
+	    opacity:  1;
+	}
+	input:focus::-moz-placeholder {
+	    color:    $focusColor;
+	    opacity:  1;
+	}
+	input:focus:-ms-input-placeholder {
+	    color:    $focusColor;
 	}
 }
