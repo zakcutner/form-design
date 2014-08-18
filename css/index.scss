@@ -57,6 +57,7 @@ body {
 		border: 0;
 		background-color: transparent;
 		@include transition(color, 100ms, linear);
+		width: calc(100% - 31px);
 	}
 
 	.field {
@@ -81,7 +82,7 @@ body {
 		}
 
 		&.warning {
-			border-right: 3px solid #F5D76E;
+			border-right: 4px solid #F5D76E;
 		}
 	}
 
