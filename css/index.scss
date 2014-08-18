@@ -1,6 +1,8 @@
 @import '_mixins';
 @import '_colour-theme';
 
+@include placeholder($inactiveLight);
+
 body {
 	font-family: Lato;
 	font-weight: 300;
@@ -44,43 +46,46 @@ body {
 	a, input {
 		@include transition(border-color, 100ms, linear);
 		outline: 0;
-		background-color: white;
 		font-family: Lato;
 		font-weight: 300;
-		font-size: 13px;
+		font-size: 14px;
 		padding: 15px;
 	}
 
 	input {
-		color: $textUser;
-		display: block;
-		width: 400px;
+		color: $inactiveLight;
 		border: 0;
+		background-color: transparent;
+		@include transition(color, 100ms, linear);
 	}
 
 	.field {
 		margin-bottom: 15px;
 		//border: 1px solid $inactiveExtraLight;
-		@include transition(border-color, 150ms, linear);
+		background-color: #eeeeee;
+		@include transition(border-color, 100ms, linear);
 
 		* {
 			display: inline-block;
 		}
 
 		.icon {
-			padding: 17px 0;
-			width: 50px;
-			text-align: center;
-			color: $white;
-			background-color: $inactiveExtraLight;
-			@include transition(background-color, 150ms, linear);
+			padding-left: 15px;
+			//padding: 18px 0;
+			//width: 50px;
+			//text-align: center;
+			color: $inactiveLight;
+			//color: $white;
+			//background-color: $inactiveExtraLight;
+			@include transition(color, 100ms, linear);
 		}
 
 		&.focus {
 			border-color: $inactiveLight;
 
-			.icon {
-				background-color: $inactiveLight;
+			.icon, input {
+				//background-color: $inactiveLight;
+				color: $inactiveDark;
 			}
 		}
 	}
@@ -92,7 +97,7 @@ body {
 		background-color: $btnDft;
 		border: 0;
 		color: white;
-		@include transition(background-color, 150ms, linear);
+		@include transition(background-color, 100ms, linear);
 		
 		&:hover, &:focus {
 			background-color: $btnHov;

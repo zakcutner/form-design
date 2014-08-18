@@ -127,6 +127,7 @@
 	@param $color : Shadow colour
 	@param $inset : Default false, determins if the shadow is inset or not.
 */
+
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
   @if $inset {
     -webkit-box-shadow:inset $top $left $blur $color;
@@ -137,4 +138,21 @@
     -moz-box-shadow: $top $left $blur $color;
     box-shadow: $top $left $blur $color;
   }
+}
+
+@mixin placeholder($color) {
+	input::-webkit-input-placeholder {
+    	color:    $color;
+	}
+	input:-moz-placeholder {
+	    color:    $color;
+	    opacity:  1;
+	}
+	input::-moz-placeholder {
+	    color:    $color;
+	    opacity:  1;
+	}
+	input:-ms-input-placeholder {
+	    color:    $color;
+	}
 }
