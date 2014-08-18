@@ -81,10 +81,27 @@
 /*
 	Align the element.
 	@param $side : The side that you want to align to. Valid inputs are: "left","center","right".
+	@param @child : Whether or not child nodes should be aligned as well as the node that has this mixin
 */
 
-@mixin align($side) {
+@mixin align($side, $child : false) {
 	$valid : false;
+	@if $child == true {
+		
+		@if $side == "left" {
+			align : left;
+			$valid : true;
+		}
+		@if $side == "center" {
+			align : center;
+			$valid : true;
+		}
+		@if $side == "right" {
+			align : right;
+			$valid : true;
+		}	
+		
+	}
 	@if $side == "left" {
 		margin-right: auto;
 		$valid : true;
