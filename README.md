@@ -1,9 +1,3 @@
-Form Designs
-===========
-
-This is the repository for Zak's and Louis's Designs, particularily for forms.
-
-Current Designs
-===========
-
-Currently we only have one form which can be found in index.html
+####Form Design
+=
+#####This is the repository for Zak and Louis' form design, which can be found at the index.html file.
