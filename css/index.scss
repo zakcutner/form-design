@@ -59,12 +59,19 @@ body {
 		@include transition(all, 100ms, linear);
 		width: calc(100% - 31px);
 	}
-
+	
 	.field {
 		margin-bottom: 15px;
+<<<<<<< HEAD
 		background-color: $inputBackground;
+=======
+		background-color: $inactiveExtraLight;
+		@include transition(border-color, 100ms, linear);
+		@include box-shadow(0px,0px,4px,$inactiveDark,true);
+>>>>>>> origin/master
 		border-right: 4px solid transparent;
 		@include transition(border, 100ms, linear);
+
 
 		* {
 			display: inline-block;
@@ -77,6 +84,11 @@ body {
 		}
 
 		&.focus {
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 			.icon, input {
 				color: $inputDark;
 			}
@@ -99,7 +111,8 @@ body {
 		border: 0;
 		color: white;
 		@include transition(background-color, 100ms, linear);
-		
+		@include box-shadow(0px,0px,4px,$inactiveDark,true);
+
 		&:hover, &:focus {
 			background-color: $btnHover;
 		}
