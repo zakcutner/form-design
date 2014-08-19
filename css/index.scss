@@ -65,6 +65,10 @@ body {
 		background-color: $inactiveExtraLight;
 		@include transition(border-color, 100ms, linear);
 		@include box-shadow(0px,0px,4px,$inactiveDark,true);
+		border-right: 4px solid transparent;
+		@include transition(border, 100ms, linear);
+
+
 		* {
 			display: inline-block;
 		}
@@ -76,6 +80,7 @@ body {
 		}
 
 		&.focus {
+
 
 			.icon, input {
 				color: $inactiveDark;
