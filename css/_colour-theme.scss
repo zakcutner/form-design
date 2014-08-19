@@ -1,42 +1,25 @@
-/*
-	Visual Messages: 
-*/
+// Text styling
 
-$errorLight : #e74c3c;
-$errorDark : #c0392b;
+$textDark : #777777;
+$textLight : #999999;
 
-$warningLight : #F5D76E;
+// Input styling
+
+$inputBackground : #dddddd;
+$inputLight : #aaaaaa;
+$inputDark : #777777;
+
+// Button styling
+
+$btnDefault : #87d37c;
+$btnHover : #7cc172;
+
+// Visual messages
+
+$warningLight : #f5d76e;
 $warningDark: #f1c40f;
 
-$successLight : #2ecc71;
-$successDark : #27ae60;
+// Extra colours
 
-$infoLight : #3498db;
-$infoDark : #2980b9;
-
-$primaryLight : #1abc9c;
-$primaryDark : #16a085;
-
-$inactiveExtraLight : #dddddd;
-$inactiveLight : #aaaaaa;
-$inactiveDark : #777777;
-/*
-	Text Styling:
-*/
-
-$textMain : #777777;
-$textLight : #999999;
-$textUser  : #666666;
-
-/*
-	Backgrounds:
-*/
-$backgroundMain : #F2F1EF;
-$backgroundContent : #ecf0f1;
-
-/*
-	Extras:
-*/
+$background : #f2f1ef;
 $white : #ffffff;
-$btnDft : #87D37C;
-$btnHov : #7CC172;

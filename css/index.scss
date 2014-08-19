@@ -1,14 +1,14 @@
 @import '_mixins';
 @import '_colour-theme';
-@include placeholder($inactiveLight, $inactiveDark);
+@include placeholder($inputLight, $inputDark);
 
 body {
 	font-family: Lato;
 	font-weight: 300;
 	margin: 0;
-	background-color: $backgroundMain;
+	background-color: $background;
 	background-size: cover;
-	color: $textMain;
+	color: $textDark;
 }
 
 .container {
@@ -53,7 +53,7 @@ body {
 	}
 
 	input {
-		color: $inactiveLight;
+		color: $inputLight;
 		border: 0;
 		background-color: transparent;
 		@include transition(all, 100ms, linear);
@@ -62,7 +62,7 @@ body {
 
 	.field {
 		margin-bottom: 15px;
-		background-color: $inactiveExtraLight;
+		background-color: $inputBackground;
 		border-right: 4px solid transparent;
 		@include transition(border, 100ms, linear);
 
@@ -72,17 +72,13 @@ body {
 
 		.icon {
 			padding-left: 15px;
-			color: $inactiveLight;
+			color: $inputLight;
 			@include transition(color, 100ms, linear);
 		}
 
 		&.focus {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 			.icon, input {
-				color: $inactiveDark;
+				color: $inputDark;
 			}
 
 			&.warning {
@@ -99,13 +95,13 @@ body {
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		background-color: $btnDft;
+		background-color: $btnDefault;
 		border: 0;
 		color: white;
 		@include transition(background-color, 100ms, linear);
 		
 		&:hover, &:focus {
-			background-color: $btnHov;
+			background-color: $btnHover;
 		}
 
 		i.fa {
@@ -114,6 +110,6 @@ body {
 	}
 
 	input:focus {
-		border-color: $inactiveLight;
+		border-color: $inputLight;
 	}
 }

@@ -161,17 +161,21 @@
 @mixin placeholder($dftColor, $focusColor) {
 	input::-webkit-input-placeholder {
     	color:    $dftColor;
+    	@include transition(color, 100ms, linear);
 	}
 	input:-moz-placeholder {
 	    color:    $dftColor;
 	    opacity:  1;
+	    @include transition(color, 100ms, linear);
 	}
 	input::-moz-placeholder {
 	    color:    $dftColor;
 	    opacity:  1;
+	    @include transition(color, 100ms, linear);
 	}
 	input:-ms-input-placeholder {
 	    color:    $dftColor;
+	    @include transition(color, 100ms, linear);
 	}
 	input:focus::-webkit-input-placeholder {
     	color:    $focusColor;
